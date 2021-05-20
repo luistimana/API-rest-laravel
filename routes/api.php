@@ -18,5 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('categoria','\App\Http\Controllers\categoriacontroller@getCategoria');
-Route::get('categoria/{id}','\App\Http\Controllers\categoriacontroller@getCategoriaxid');
+Route::get('categoria','\App\Http\Controllers\CategoriaController@getCategoria');
+Route::get('categoria/{id}','\App\Http\Controllers\CategoriaController@getCategoriaxid');
+Route::post('addCategoria','\App\Http\Controllers\CategoriaController@insertCategoria');
+Route::put('updateCategoria/{id}','\App\Http\Controllers\CategoriaController@updateCategoria');
+

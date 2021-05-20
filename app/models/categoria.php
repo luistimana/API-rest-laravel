@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class categoria extends Model
 {
     public $timestamps = false;
-    protected $filleable = ['id', 'cat_nom', 'cat_obs'];
+    protected $fillable = ['id', 'cat_nom', 'cat_obs'];
 }
